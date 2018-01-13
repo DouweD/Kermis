@@ -1,13 +1,23 @@
 
 public class Attracties {
-
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Welkom bij Douweland");
 		
 		BotsAutos bots = new BotsAutos();
-		bots.prijsTonen();
+		System.out.println(bots.getNummer());
 		
+		/*
+		BotsAutos bots = new BotsAutos();
+		bots.tonen(); 
+		*/
+		/*
 		Spin spin = new Spin();
 		spin.prijsTonen();
 		
@@ -22,10 +32,15 @@ public class Attracties {
 		
 		ladderKlimmen ladd = new ladderKlimmen();
 		ladd.prijsTonen();
+		*/
 	}
 
 }
 
+
+
+
+/*
 class BotsAutos {
 	void prijsTonen() {
 		System.out.println("De prijs voor botsauto's is €2,50.");
@@ -61,3 +76,5 @@ class ladderKlimmen {
 		System.out.println("De prijs voor ladderklimmen is €5,00.");
 	}
 }
+
+*/
