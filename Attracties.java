@@ -5,7 +5,7 @@ public class Attracties {
 	public static void main(String[] args) {
 		
 		Scanner invoer = new Scanner(System.in);
-		// TODO Auto-generated method stub
+		
 		System.out.println("Welkom bij Douweland!");
 		System.out.println("---------------------");
 		System.out.println("Voer hieronder de naam van de attractie in:");
@@ -13,7 +13,6 @@ public class Attracties {
 		BotsAutos bots = new BotsAutos();
 		String attNaam = invoer.nextLine();
 		bots.setNaam(attNaam);
-		
 		bots.uitvoer();
 		
 		/*
