@@ -1,17 +1,17 @@
+import java.util.Scanner;
 
 public class Attracties {
 	
-	
-	
-	
-	
-	
 	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
 		// TODO Auto-generated method stub
 		System.out.println("Welkom bij Douweland");
 		
 		BotsAutos bots = new BotsAutos();
 		System.out.println(bots.getNummer());
+		
+		
 		
 		/*
 		BotsAutos bots = new BotsAutos();
