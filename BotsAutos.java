@@ -11,14 +11,15 @@ public class BotsAutos extends Attracties {
 		System.out.println("De prijs voor "+ naam + "is €"+ prijs +".");
 	}
 	
-	
-	public void Bots(double attPrijs, int attNummer, String attNaam) {
-		prijs = attPrijs;
-		nummer = attNummer;
-		naam = attNaam;
+	public BotsAutos() {
+		
 	}
 	
-	public void setAttractie(double attPrijs, int attNummer, String attNaam) {
+	public void setNaam(/*double attPrijs, int attNummer, */String attnaam) {
+		naam = attnaam;
+	}	
+		
+	/*
 		prijs = attPrijs;
 		nummer = attNummer;
 		naam = attNaam;
@@ -31,13 +32,14 @@ public class BotsAutos extends Attracties {
 	public double getPrijs() {
 		return prijs;
 	}
-	
+	*/
+		
 	public String getNaam() {
 		return naam;
 	}
 	
-	public void zeg() {
-		System.out.println(naam);
+	public void uitvoer() {
+		System.out.printf("De naam van de attractie is %s ", getNaam());
 	}
 	
 }
