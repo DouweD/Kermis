@@ -6,6 +6,21 @@ public class Attracties {
 		
 		Scanner invoer = new Scanner(System.in);
 		
+		int dayOfWeek = 123;
+		switch(dayOfWeek) {
+		default:
+			System.out.println("Weekdag");
+			break;
+		case 1:
+			System.out.println("Zondag");
+			break;
+		case 2:
+			System.out.println("Zaterdag");
+			break;
+		}		
+		
+		
+		
 		System.out.println("Welkom bij Douweland!");
 		System.out.println("---------------------");
 		System.out.println("Voer hieronder de naam van de attractie in:");
@@ -14,6 +29,9 @@ public class Attracties {
 		String attNaam = invoer.nextLine();
 		bots.setNaam(attNaam);
 		bots.uitvoer();
+		
+		
+		
 		
 		/*
 		BotsAutos bots = new BotsAutos();
