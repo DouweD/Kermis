@@ -6,7 +6,9 @@ public class Attracties {
 		
 		Scanner invoer = new Scanner(System.in);
 		// TODO Auto-generated method stub
-		System.out.println("Welkom bij Douweland");
+		System.out.println("Welkom bij Douweland!");
+		System.out.println("---------------------");
+		System.out.println("Voer hieronder de naam van de attractie in:");
 		
 		BotsAutos bots = new BotsAutos();
 		String attNaam = invoer.nextLine();
