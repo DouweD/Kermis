@@ -5,11 +5,6 @@ public class BotsAutos extends Attracties {
 	private double prijs = 2.50;
 	private String naam = "Botsauto's";
 	
-	
-	public BotsAutos() {
-		
-	}
-	
 	public void setNaam(String attnaam) {
 		naam = attnaam;
 	}	
@@ -18,13 +13,6 @@ public class BotsAutos extends Attracties {
 		prijs = attprijs;
 	}
 	
-	/*
-		prijs = attPrijs;
-		nummer = attNummer;
-		naam = attNaam;
-	}
-	
-	*/
 	public double getPrijs() {
 		return prijs;
 	}

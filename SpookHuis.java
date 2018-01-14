@@ -1,9 +1,9 @@
 
-public class Spin extends Attracties {
+public class SpookHuis extends Attracties {
 
 	
-	private double prijs = 2.25;
-	private String naam = "Spin";
+	private double prijs = 3.20;
+	private String naam = "Spookhuis";
 	
 	public void setNaam(String attnaam) {
 		naam = attnaam;
@@ -22,7 +22,7 @@ public class Spin extends Attracties {
 	}
 	
 	public void uitvoer() {
-		System.out.println("De prijs voor de " + naam + " bedraagt €"+ prijs +".");
+		System.out.println("De prijs voor dit ziek enge " + naam + " bedraagt €"+ prijs +".");
 	}
 	
 }

@@ -6,9 +6,10 @@ public class Attracties {
 	
 	
 	public static void welkom() {
-		System.out.println("Welkom bij Douweland!");
-		System.out.println("---------------------");
-		System.out.println("Voer hieronder het attractienummer in:");
+		System.out.println("WELKOM IN DOUWELAND!");
+		System.out.println("-----");
+		System.out.println("1. BOTSAUTO'S \n2. SPIN \n3. SPIEGELPALEIS \n4. SPOOKHUIS \n5. HAWAII \n6. LADDERKLIMMEN");
+		System.out.println("\nVoer hieronder het nummer in van de bezochtte attracties:");
 	}
 	
 	
@@ -21,52 +22,71 @@ public class Attracties {
 		
 		BotsAutos bots = new BotsAutos();
 		Spin spin = new Spin();
+		SpiegelPaleis spie = new SpiegelPaleis();
+		SpookHuis spoo = new SpookHuis();
+		Hawaii hawa = new Hawaii();
+		LadderKlimmen ladd = new LadderKlimmen();
 		
 		ArrayList<Double> rekening = new ArrayList<>();
-			
+		
+		
+		welkom();
 		while(appLoopt) {
 			
 			String getalInvoer = invoer.nextLine();
+			
 			switch(getalInvoer) {
 			default:
-				System.out.println("U heeft een onbekend getal ingevoerd. Vul het attractienummer nogmaals in:");
+				System.out.println("U heeft een onbekend attractienummer ingevoerd. \nVoer hieronder nogmaals één van de bovenstaande attractienummers in:");
 				break;
 			case "1":
 				bots.uitvoer();
 				rekening.add(bots.getPrijs());
-				System.out.println("Vul nog een nummer in, druk op 'O' voor het totaaloverzicht of druk op 'E' om af te sluiten");
+				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
 				break;
 			case "2":
 				spin.uitvoer();
 				rekening.add(spin.getPrijs());
+				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
 				break;
 			case "3":
-				bots.uitvoer();
+				spie.uitvoer();
+				rekening.add(spie.getPrijs());
+				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
 				break;
 			case "4":
-				spin.uitvoer();
+				spoo.uitvoer();
+				rekening.add(spoo.getPrijs());
+				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
 				break;
 			case "5":
-				bots.uitvoer();
+				hawa.uitvoer();
+				rekening.add(hawa.getPrijs());
+				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
 				break;
 			case "6":
-				spin.uitvoer();
-				break;	
+				ladd.uitvoer();
+				rekening.add(ladd.getPrijs());
+				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				break;
+			case "O":
+				System.out.println(rekening);
+				double totaal = rekening.stream().mapToDouble(Double::doubleValue).sum();
+				System.out.println("UW TOTAALBEDRAG IS: €"+ totaal + ". \nU KUNT DIT BEDRAG ZOWEL CONTANT BETALEN ALS MET PIN!");
+				break;
 			case "E":
 				appLoopt = false;
+				System.out.println("Afgesloten [->");
 				break;
 			}	
 		}
+		
 		/*
 		if(getalInvoer == "1") {
 			rekening.add(bots.getPrijs());
 			System.out.println("Hoi");
 		}
 		*/
-		
-		System.out.println(rekening);
-		double totaal = rekening.stream().mapToDouble(Double::doubleValue).sum();
-		System.out.println(totaal);
 		
 		/*
 		BotsAutos bots = new BotsAutos();
