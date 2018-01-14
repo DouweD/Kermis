@@ -15,13 +15,10 @@ public class Attracties {
 		bots.setNaam(attNaam);
 		bots.uitvoer();
 		
-
 		int getalInvoer = invoer.nextInt();
-		
-		
 		switch(getalInvoer) {
 		default:
-			System.out.println("Weekdag");
+			System.out.println(bots.getNaam());
 			break;
 		case 1:
 			System.out.println("Zondag");
