@@ -1,54 +1,72 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Attracties {
 	
-	public static void main(String[] args) {
-		
-		Scanner invoer = new Scanner(System.in);
-				
+	
+	public static void welkom() {
 		System.out.println("Welkom bij Douweland!");
 		System.out.println("---------------------");
 		System.out.println("Voer hieronder het attractienummer in:");
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		boolean appLoopt = true;
+		
+		Scanner invoer = new Scanner(System.in);
 		
 		BotsAutos bots = new BotsAutos();
 		Spin spin = new Spin();
-				
-		int getalInvoer = invoer.nextInt();
-		switch(getalInvoer) {
-		default:
-			System.out.println("U heeft een onbekend getal ingevoerd. Vul het attractienummer nogmaals in:");
-			break;
-		case 1:
-			bots.uitvoer();
-			break;
-		case 2:
-			spin.uitvoer();
-			break;
-		case 3:
-			bots.uitvoer();
-			break;
-		case 4:
-			spin.uitvoer();
-			break;
-		case 5:
-			bots.uitvoer();
-			break;
-		case 6:
-			spin.uitvoer();
-			break;	
-		}	
 		
 		ArrayList<Double> rekening = new ArrayList<>();
-		
-		if(getalInvoer == 1) {
+			
+		while(appLoopt) {
+			
+			String getalInvoer = invoer.nextLine();
+			switch(getalInvoer) {
+			default:
+				System.out.println("U heeft een onbekend getal ingevoerd. Vul het attractienummer nogmaals in:");
+				break;
+			case "1":
+				bots.uitvoer();
+				rekening.add(bots.getPrijs());
+				System.out.println("Vul nog een nummer in, druk op 'O' voor het totaaloverzicht of druk op 'E' om af te sluiten");
+				break;
+			case "2":
+				spin.uitvoer();
+				rekening.add(spin.getPrijs());
+				break;
+			case "3":
+				bots.uitvoer();
+				break;
+			case "4":
+				spin.uitvoer();
+				break;
+			case "5":
+				bots.uitvoer();
+				break;
+			case "6":
+				spin.uitvoer();
+				break;	
+			case "E":
+				appLoopt = false;
+				break;
+			}	
+		}
+		/*
+		if(getalInvoer == "1") {
 			rekening.add(bots.getPrijs());
 			System.out.println("Hoi");
 		}
+		*/
 		
 		System.out.println(rekening);
-		
-		
+		double totaal = rekening.stream().mapToDouble(Double::doubleValue).sum();
+		System.out.println(totaal);
 		
 		/*
 		BotsAutos bots = new BotsAutos();
