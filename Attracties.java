@@ -8,22 +8,21 @@ public class Attracties {
 				
 		System.out.println("Welkom bij Douweland!");
 		System.out.println("---------------------");
-		System.out.println("Voer hieronder de naam van de attractie in:");
+		System.out.println("Voer hieronder het attractienummer in:");
 		
 		BotsAutos bots = new BotsAutos();
-		
-		
-		
+		Spin spin = new Spin();
+				
 		int getalInvoer = invoer.nextInt();
 		switch(getalInvoer) {
 		default:
-			bots.uitvoer();
+			System.out.println("U heeft een onbekend getal ingevoerd. Vul het attractienummer nogmaals in:");
 			break;
 		case 1:
-			System.out.println("Zondag");
+			bots.uitvoer();
 			break;
 		case 2:
-			System.out.println("Zaterdag");
+			spin.uitvoer();
 			break;
 		}	
 		

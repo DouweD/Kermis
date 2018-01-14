@@ -1,12 +1,12 @@
 
-public class BotsAutos extends Attracties {
+public class Spin extends Attracties {
 
 	
-	private double prijs = 2.50;
-	private String naam = "Botsauto's";
+	private double prijs = 2.25;
+	private String naam = "Spin";
 	
 	
-	public BotsAutos() {
+	public Spin() {
 		
 	}
 	
