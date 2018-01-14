@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Attracties {
@@ -24,8 +25,28 @@ public class Attracties {
 		case 2:
 			spin.uitvoer();
 			break;
+		case 3:
+			bots.uitvoer();
+			break;
+		case 4:
+			spin.uitvoer();
+			break;
+		case 5:
+			bots.uitvoer();
+			break;
+		case 6:
+			spin.uitvoer();
+			break;	
 		}	
 		
+		ArrayList<Double> rekening = new ArrayList<>();
+		
+		if(getalInvoer == 1) {
+			rekening.add(bots.getPrijs());
+			System.out.println("Hoi");
+		}
+		
+		System.out.println(rekening);
 		
 		
 		
@@ -65,7 +86,7 @@ class BotsAutos {
 
 class Spin {
 	void prijsTonen() {
-		System.out.println("De prijs voor de Spin is €2,50.");
+		System.out.println("De prijs voor de Spin is €2,25.");
 	}
 }
 

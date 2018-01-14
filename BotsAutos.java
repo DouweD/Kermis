@@ -13,22 +13,22 @@ public class BotsAutos extends Attracties {
 	public void setNaam(String attnaam) {
 		naam = attnaam;
 	}	
-	/*
+	
 	public void setPrijs(double attprijs) {
 		prijs = attprijs;
 	}
 	
-	
+	/*
 		prijs = attPrijs;
 		nummer = attNummer;
 		naam = attNaam;
 	}
 	
-	
+	*/
 	public double getPrijs() {
 		return prijs;
 	}
-	*/
+	
 	public String getNaam() {
 		return naam;
 	}
