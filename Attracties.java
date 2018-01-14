@@ -11,14 +11,13 @@ public class Attracties {
 		System.out.println("Voer hieronder de naam van de attractie in:");
 		
 		BotsAutos bots = new BotsAutos();
-		int attPrijs = invoer.nextInt();
-		bots.setPrijs(attPrijs);
-		bots.uitvoer();
+		
+		
 		
 		int getalInvoer = invoer.nextInt();
 		switch(getalInvoer) {
 		default:
-			System.out.println(bots.getPrijs());
+			bots.uitvoer();
 			break;
 		case 1:
 			System.out.println("Zondag");
