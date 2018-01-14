@@ -3,7 +3,7 @@ public class Hawaii extends Attracties {
 
 	
 	private double prijs = 73523.99;
-	private String naam = "Hawaii";
+	private String naam = "HAWAII";
 	
 	public void setNaam(String attnaam) {
 		naam = attnaam;
@@ -22,7 +22,7 @@ public class Hawaii extends Attracties {
 	}
 	
 	public void uitvoer() {
-		System.out.println("U heeft zojuist een retour " + naam + " met KLM geboekt voor slechts €" + prijs + ". Veel plezier!");
+		System.out.println("\nU HEEFT ZOJUIST EEN RETOUR " + naam + " MET KLM GEBOEKT VOOR SLECHTS €" + prijs + ". ENJOY!");
 	}
 	
 }

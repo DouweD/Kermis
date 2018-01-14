@@ -3,7 +3,7 @@ public class Spin extends Attracties {
 
 	
 	private double prijs = 2.25;
-	private String naam = "Spin";
+	private String naam = "SPIN";
 	
 	public void setNaam(String attnaam) {
 		naam = attnaam;
@@ -22,7 +22,7 @@ public class Spin extends Attracties {
 	}
 	
 	public void uitvoer() {
-		System.out.println("De prijs voor de " + naam + " bedraagt €"+ prijs +".");
+		System.out.println("\nDE PRIJS VOOR DE " + naam + " BEDRAAGT €"+ prijs +".");
 	}
 	
 }

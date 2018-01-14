@@ -37,46 +37,48 @@ public class Attracties {
 			
 			switch(getalInvoer) {
 			default:
-				System.out.println("U heeft een onbekend attractienummer ingevoerd. \nVoer hieronder nogmaals één van de bovenstaande attractienummers in:");
+				System.out.println("\nU heeft een onbekend attractienummer ingevoerd. \nVoer hieronder nogmaals één van de bovenstaande attractienummers in:");
 				break;
 			case "1":
 				bots.uitvoer();
 				rekening.add(bots.getPrijs());
-				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				System.out.println("-----\nVoer 'O' in voor het totaaloverzicht \nVoer 'E' in om af te sluiten \nU kunt hieronder nog een attractie toevoegen:");
 				break;
 			case "2":
 				spin.uitvoer();
 				rekening.add(spin.getPrijs());
-				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				System.out.println("-----\nVoer 'O' in voor het totaaloverzicht \nVoer 'E' in om af te sluiten \nU kunt hieronder nog een attractie toevoegen:");
 				break;
 			case "3":
 				spie.uitvoer();
 				rekening.add(spie.getPrijs());
-				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				System.out.println("-----\nVoer 'O' in voor het totaaloverzicht \nVoer 'E' in om af te sluiten \nU kunt hieronder nog een attractie toevoegen:");
 				break;
 			case "4":
 				spoo.uitvoer();
 				rekening.add(spoo.getPrijs());
-				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				System.out.println("-----\nVoer 'O' in voor het totaaloverzicht \nVoer 'E' in om af te sluiten \nU kunt hieronder nog een attractie toevoegen:");
 				break;
 			case "5":
 				hawa.uitvoer();
 				rekening.add(hawa.getPrijs());
-				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				System.out.println("-----\nVoer 'O' in voor het totaaloverzicht \nVoer 'E' in om af te sluiten \nU kunt hieronder nog een attractie toevoegen:");
 				break;
 			case "6":
 				ladd.uitvoer();
 				rekening.add(ladd.getPrijs());
-				System.out.println("-----\nVOER 'O' IN VOOR HET TOTAALOVERZICHT \nVOER 'E' IN OM AF TE SLUITEN \nU KUNT HIERONDER NOG EEN ATTRACTIENUMMER INVOEREN");
+				System.out.println("-----\nVoer 'O' in voor het totaaloverzicht \nVoer 'E' in om af te sluiten \nU kunt hieronder nog een attractie toevoegen:");
 				break;
 			case "O":
 				System.out.println(rekening);
 				double totaal = rekening.stream().mapToDouble(Double::doubleValue).sum();
-				System.out.println("UW TOTAALBEDRAG IS: €"+ totaal + ". \nU KUNT DIT BEDRAG ZOWEL CONTANT BETALEN ALS MET PIN!");
+				System.out.println("\nUW TOTAALBEDRAG IS: €"+ totaal + ".");
+				System.out.println("----- \nHet bedrag kan zowel contant als met pin worden voldaan.");
+				System.out.println("U kunt hieronder nog een attractie toevoegen of afsluiten met 'E'.");
 				break;
 			case "E":
 				appLoopt = false;
-				System.out.println("Afgesloten [->");
+				System.out.println("Bedankt voor uw bezoek en geld! \nAfgesloten [->");
 				break;
 			}	
 		}

@@ -3,7 +3,7 @@ public class BotsAutos extends Attracties {
 
 	
 	private double prijs = 2.50;
-	private String naam = "Botsauto's";
+	private String naam = "BOTSAUTO'S";
 	
 	public void setNaam(String attnaam) {
 		naam = attnaam;
@@ -22,7 +22,7 @@ public class BotsAutos extends Attracties {
 	}
 	
 	public void uitvoer() {
-		System.out.println("De prijs voor de " + naam + " bedraagt €"+ prijs +".");
+		System.out.println("\nDE PRIJS VOOR DE " + naam + " BEDRAAGT €"+ prijs +".");
 	}
 	
 }

@@ -3,7 +3,7 @@ public class SpiegelPaleis extends Attracties {
 
 	
 	private double prijs = 2.75;
-	private String naam = "Spiegelpaleis";
+	private String naam = "SPIEGELPALEIS";
 	
 	public void setNaam(String attnaam) {
 		naam = attnaam;
@@ -22,7 +22,7 @@ public class SpiegelPaleis extends Attracties {
 	}
 	
 	public void uitvoer() {
-		System.out.println("De prijs voor het " + naam + " bedraagt €"+ prijs +".");
+		System.out.println("\nDE PRIJS VOOR HET " + naam + " BEDRAAGT €"+ prijs +".");
 	}
 	
 }
